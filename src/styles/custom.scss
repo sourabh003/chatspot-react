@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+.authpage-container {
+	min-height: 100vh;
+	background: radial-gradient($bgColor, black);
+	display: grid;
+	place-items: center;
+	width: 100%;
+	.form-container {
+		width: 20%;
+		padding: 20px;
+		.form {
+			width: 100%;
+			.custom-input {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			.custom-button {
+				height: 50px;
+				padding: 1vh;
+				margin: 10px 0px;
+			}
+			.secondary-button {
+				background-color: $secondaryColor;
+			}
+			.secondary-button:hover {
+				background-color: #790b3b;
+			}
+			.form-text a {
+				text-decoration: none;
+				color: $primaryColor;
+				font-weight: bold;
+			}
+		}
+	}
+}
